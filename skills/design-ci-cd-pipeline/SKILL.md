@@ -5,6 +5,7 @@ description: Design a right-sized GitHub Actions or GitLab CI release pipeline f
 
 # Design CI/CD pipeline
 
+Read [pipeline sizing](../../rules/sizing.md) to choose the minimum useful job graph.
 Read the PRD, deployment contract, repository inventory, measured tests, and selected provider.
 Use GitHub Actions only as the default; GitLab CI is supported when selected. If another provider
 is required, report the missing provider implementation before generation. Define required checks,
