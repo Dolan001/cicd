@@ -3,11 +3,15 @@
   "instructions": {
     "pre_task": "hooks/pre-task.md",
     "pre_write": "hooks/pre-write.md",
-    "pre_verify": "hooks/pre-verify.md"
+    "post_write": "hooks/post-write.md",
+    "pre_verify": "hooks/pre-verify.md",
+    "pre_commit": "hooks/pre-commit.md"
   },
   "hooks": {
     "pre_task": ["require_approved_release_contract", "acquire_path_lease"],
     "pre_write": ["enforce_selected_provider_scope", "reject_secrets"],
-    "pre_verify": ["release_implementer_lease", "require_independent_verifier"]
+    "post_write": ["validate_pipeline_syntax", "record_generation_evidence"],
+    "pre_verify": ["release_implementer_lease", "require_independent_verifier"],
+    "pre_commit": ["require_verified_pipeline", "scan_staged_secrets"]
   }
 }
