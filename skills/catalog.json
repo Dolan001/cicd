@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "framework": "cicd",
+  "format": "markdown-first",
+  "skills": [
+    {"name": "design-ci-cd-pipeline", "path": "skills/design-ci-cd-pipeline/SKILL.md"},
+    {"name": "generate-ci-cd-pipeline", "path": "skills/generate-ci-cd-pipeline/SKILL.md"},
+    {"name": "verify-ci-cd-pipeline", "path": "skills/verify-ci-cd-pipeline/SKILL.md"}
+  ]
+}

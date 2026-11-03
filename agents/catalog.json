@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "format": "markdown-first",
+  "framework": "cicd",
+  "path_pattern": "agents/{agent}.md",
+  "agents": [
+    {"agent": "cicd-pipeline-architect", "purpose": "Select a CI provider and release topology from the approved project contract.", "writes_application_code": false},
+    {"agent": "cicd-pipeline-implementer", "purpose": "Generate scoped, executable CI/CD files for the selected provider.", "writes_application_code": false, "allowed_target_paths": [".github/workflows/**", ".gitlab-ci.yml", "ci/**", "docs/deployment/**", ".ai/evidence/deployment/**"]},
+    {"agent": "cicd-independent-verifier", "purpose": "Independently verify CI/CD syntax, permissions, artifact lineage, and protected promotion.", "writes_application_code": false}
+  ]
+}
